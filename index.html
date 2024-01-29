@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: black;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: none;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+        }
+
+        #btn {
+            border: 1px solid black;
+            color: green;
+            background-color: black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <p>notification</p>
+    </div>
+
+    <button id="btn">Click For Notification</button>
+
+    <script>
+
+        let showed = function () {
+            document.getElementById('box').style.display = 'inline';
+          
+          
+            let moved = function(){
+                   box.style.display = 'none';
+                }
+                setTimeout(moved,3000)
+        }
+
+        var button = document.getElementById("btn").addEventListener("click", showed,)
+    </script>
+</body>
+
+</html>
